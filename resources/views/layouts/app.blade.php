@@ -15,18 +15,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS ================================================== -->
-    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
-    <link rel="stylesheet" href="{{ asset('css/vendor.css') }}">  
-    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/base.css') }}">
+    <link rel="stylesheet" href="{{ secure_asset('css/vendor.css') }}">  
+    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
 
 
    <!-- script ================================================== -->
-    <script src="{{ asset('js/modernizr.js') }}"></script>
-    <script src="{{ asset('js/pace.min.js') }}"></script>
+    <script src="{{ secure_asset('js/modernizr.js') }}"></script>
+    <script src="{{ secure_asset('js/pace.min.js') }}"></script>
 
    <!-- favicons ================================================== -->
-    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
-    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ secure_asset('favicon.png') }}" type="image/png">
+    <link rel="icon" href="{{ secure_asset('favicon.png') }}" type="image/png">
 </head>
 <body id="top">
     <!-- header ================================================== -->
