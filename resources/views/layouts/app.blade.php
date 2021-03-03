@@ -125,11 +125,11 @@
 
         <div class="footer-bottom">
             <div class="row">
-
                 <div class="col-twelve">
                     <div class="copyright">
                         <span>© Copyright Abstract 2016</span> 
-                        <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>                  
+                        <span>Design by <a href="http://www.styleshout.com/">styleshout</a></span>
+                        <span>Remake by <a href="https://www.instagram.com/_pylw/">Quân</a></span>               
                     </div>
 
                     <div id="go-top">
@@ -139,7 +139,6 @@
 
             </div> 
         </div> <!-- end footer-bottom -->  
-
     </footer>  
 
     <div id="preloader"> 
