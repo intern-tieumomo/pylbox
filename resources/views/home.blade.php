@@ -1,3 +1,3 @@
 @extends('layouts.app')
 
-@section('title', 'Pylate | Home')
+@section('title', 'Pylbox | Home')

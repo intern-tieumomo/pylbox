@@ -6,7 +6,7 @@
    <!--- basic page needs ================================================== -->
     <meta charset="utf-8">
     <title>
-        @yield('title', 'Loading ... 💦')
+        @yield('title', trans('text.app.loading'))
     </title>
     <meta name="description" content="">  
     <meta name="author" content="">
@@ -15,18 +15,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
     <!-- CSS ================================================== -->
-    <link rel="stylesheet" href="{{ secure_asset('css/base.css') }}">
-    <link rel="stylesheet" href="{{ secure_asset('css/vendor.css') }}">  
-    <link rel="stylesheet" href="{{ secure_asset('css/main.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/base.css') }}">
+    <link rel="stylesheet" href="{{ asset('css/vendor.css') }}">  
+    <link rel="stylesheet" href="{{ asset('css/main.css') }}">
 
 
    <!-- script ================================================== -->
-    <script src="{{ secure_asset('js/modernizr.js') }}"></script>
-    <script src="{{ secure_asset('js/pace.min.js') }}"></script>
+    <script src="{{ asset('js/modernizr.js') }}"></script>
+    <script src="{{ asset('js/pace.min.js') }}"></script>
 
    <!-- favicons ================================================== -->
-    <link rel="shortcut icon" href="{{ secure_asset('favicon.png') }}" type="image/png">
-    <link rel="icon" href="{{ secure_asset('favicon.png') }}" type="image/png">
+    <link rel="shortcut icon" href="{{ asset('favicon.png') }}" type="image/png">
+    <link rel="icon" href="{{ asset('favicon.png') }}" type="image/png">
 </head>
 <body id="top">
     <!-- header ================================================== -->
@@ -34,50 +34,39 @@
         <div class="gradient-block"></div>
         <div class="row header-content">
             <div class="logo">
-               <a href="{{ route('home') }}">Author</a>
+               <a href="{{ route('home') }}">Pylbox</a>
            </div>
 
            <nav id="main-nav-wrap">
             <ul class="main-navigation sf-menu">
-                <li class="current"><a href="index.html" title="">Home</a></li>                                 
+                <li class="current"><a href="{{ route('home') }}" title="">{{ trans('text.app.home') }}</a>                         
                 <li class="has-children">
-                    <a href="category.html" title="">Categories</a>
+                    <a href="category.html" title="">{{ trans('text.app.collections') }}</a>
                     <ul class="sub-menu">
-                        <li><a href="category.html">Wordpress</a></li>
-                        <li><a href="category.html">HTML</a></li>
-                        <li><a href="category.html">Photography</a></li>
-                        <li><a href="category.html">UI</a></li>
-                        <li><a href="category.html">Mockups</a></li>
-                        <li><a href="category.html">Branding</a></li>
+                        <li><a href="category.html">Game</a></li>
                     </ul>
                 </li>
+                <li><a href="about.html" title="">{{ trans('text.app.about') }}</a></li>    
+                <li><a href="contact.html" title="">{{ trans('text.app.contact') }}</a></li>
                 <li class="has-children">
-                    <a href="single-standard.html" title="">Blog</a>
+                    <a href="category.html" title="">{{ trans('text.app.languages') }}</a>
                     <ul class="sub-menu">
-                        <li><a href="single-video.html">Video Post</a></li>
-                        <li><a href="single-audio.html">Audio Post</a></li>
-                        <li><a href="single-gallery.html">Gallery Post</a></li>
-                        <li><a href="single-standard.html">Standard Post</a></li>
+                        <li><a href="{!! route('home.change-language', ['vi']) !!}">Tiếng Việt</a></li>
+                        <li><a href="{!! route('home.change-language', ['en']) !!}">English</a></li>
                     </ul>
-                </li>
-                <li><a href="style-guide.html" title="">Styles</a></li>
-                <li><a href="about.html" title="">About</a></li>    
-                <li><a href="contact.html" title="">Contact</a></li>                                        
+                </li>                                      
             </ul>
         </nav> <!-- end main-nav-wrap -->
 
         <div class="search-wrap">
-
             <form role="search" method="get" class="search-form" action="#">
                 <label>
-                    <span class="hide-content">Search for:</span>
-                    <input type="search" class="search-field" placeholder="Type Your Keywords" value="" name="s" title="Search for:" autocomplete="off">
+                    <span class="hide-content">{{ trans('text.app.search') }}</span>
+                    <input type="search" class="search-field" placeholder="{{ trans('text.app.type') }}" value="" name="s" title="{{ trans('text.app.search') }}" autocomplete="off">
                 </label>
                 <input type="submit" class="search-submit" value="Search">
             </form>
-
             <a href="#" id="close-search" class="close-btn">Close</a>
-
         </div> <!-- end search wrap --> 
 
         <div class="triggers">
