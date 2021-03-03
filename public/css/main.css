@@ -2059,7 +2059,7 @@ header .logo a {
 }
 
 .search-wrap .search-form::after {
-	content: "Press Enter to begin your search.";
+	content: "Enter !";
 	display: block;
 	letter-spacing: 0.6px;
 	font-size: 1.6rem;
