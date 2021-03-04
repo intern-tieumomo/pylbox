@@ -17,6 +17,8 @@ Route::group(['middleware' => 'locale'], function() {
     Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('home.change-language');
 
     Route::get('/', function () {
-        return view('home');
+        return view('home.home');
     })->name('home');
+
+
 });
