@@ -1,5 +1,9 @@
 <?php
 return [
+    'home' => [
+        'title' => 'Home :: Pylation',
+        
+    ],
     'app' => [
         'loading' => 'Loading ... ',
         'home' => 'Home',

@@ -10,14 +10,18 @@
     <!-- Custom CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('home/css/style.css') }}">
-    <title>Team Work Process</title>
+    <link rel="shortcut icon" type="image/png" href="{{ asset('home/assets/images/icon-p.png') }}">
+
+    <script src="https://kit.fontawesome.com/fab5b84e56.js" crossorigin="anonymous"></script>
+
+    <title>{{ trans('app.home.title') }}</title>
 </head>
 <body>
     <div class="container">
         <header class="head my-3">
             <nav class="navbar navbar-expand-lg navbar-light head__custom-nav">
                 <a class="navbar-brand d-flex align-items-center" href="#">
-                    <img src="{{ asset('home/assets/images/logo.png') }}" alt="website logo">
+                    <img src="{{ asset('home/assets/images/logo-p.png') }}" alt="website logo">
                     <span>Pylation</span>
                 </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
@@ -26,16 +30,25 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
+                            <a class="nav-link" href="#">Go to Pylation <i class="fas fa-location-arrow"></i></a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">About us</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Info</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Languages
+                            </a>
+                            <style type="text/css">
+                                .dropdown-toggle::after { 
+                                    content: none; 
+                                }
+                            </style>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                                <a class="dropdown-item" href="{!! route('home.change-language', ['vi']) !!}">Tiếng Việt</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="{!! route('home.change-language', ['en']) !!}">English</a>
+                            </div>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary" href="#">Contact us</a>
@@ -48,9 +61,8 @@
     <div class="container">
         <div class="row custom-section d-flex align-items-center">
             <div class="col-12 col-lg-4">
-                <h2>Team Work</h2>
-                <h3>Process</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem!</p>
+                <h2>Pylation</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem!</p>
                 <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">Learn more</a>
 
                 <!-- Modal -->
