@@ -1,5 +1,15 @@
 <?php
 return [
+    'pylation' => 'Pylation',
+    'home' => [
+        'title' => 'Trang Chủ :: Pylation',
+        'go' => 'Khám phá Pylation',
+        'about' => 'Giới thiệu',
+        'languages' => 'Ngôn ngữ',
+        'contact' => 'Liên hệ',
+        'lorem' => 'Dòng này chả có ý nghĩa gì cả, nó xuất hiện ở đây khi người ta không biết viết gì !!',
+        'explore' => 'Khám phá',
+    ],
     'app' => [
         'loading' => 'Đang tải ... ',
         'home' => 'Trang chủ',

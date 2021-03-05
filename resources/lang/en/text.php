@@ -1,8 +1,14 @@
 <?php
 return [
+    'pylation' => 'Pylation',
     'home' => [
         'title' => 'Home :: Pylation',
-        
+        'go' => 'Go to Pylation',
+        'about' => 'About us',
+        'languages' => 'Languages',
+        'contact' => 'Contact us',
+        'lorem' => 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, quidem!',
+        'explore' => 'Explore',
     ],
     'app' => [
         'loading' => 'Loading ... ',

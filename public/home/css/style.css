@@ -3,6 +3,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Mali:wght@500&display=swap');
 
+* {
+  user-select: none;
+}
+
 body {
   font-family: 'Montserrat', sans-serif; }
 
@@ -31,7 +35,8 @@ body {
   padding: 40px 0; }
   @media screen and (max-width: 991.98px) {
     .custom-section {
-      flex-direction: column-reverse; } }
+      flex-direction: column-reverse; }
+  }
   .custom-section .col-lg-4 {
     margin-top: 100px; }
     .custom-section .col-lg-4 h2 {
@@ -80,5 +85,9 @@ body {
     position: absolute;
     top: -13.5rem;
     right: 2.9rem; }
+
+  /*.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0; }*/
 
 /*# sourceMappingURL=style.css.map */
