@@ -42,16 +42,19 @@
                             <a class="nav-link dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 {{ trans('text.home.languages') }}
                             </a>
-                            <style type="text/css">
-                                .dropdown-toggle::after { 
-                                    content: none;
-                                }
-                            </style>
                             <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                                 <a class="dropdown-item" href="{!! route('home.change-language', ['vi']) !!}">Tiếng Việt</a>
                                 <div class="dropdown-divider"></div>
                                 <a class="dropdown-item" href="{!! route('home.change-language', ['en']) !!}">English</a>
                             </div>
+                            <style type="text/css">
+                                .dropdown-toggle::after { 
+                                    content: none;
+                                }
+                                .dropdown-item::hover {
+                                    background-color: none;
+                                }
+                            </style>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-primary showMaintananceToast" href="#">{{ trans('text.home.contact') }}</a>
