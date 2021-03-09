@@ -69,7 +69,7 @@
             <div class="col-12 col-lg-4">
                 <h2>{{ trans('text.pylation') }}</h2>
                 <p>{{ trans('text.home.lorem') }}</p>
-                <a href="#" data-bs-toggle="modal" data-bs-target="#exampleModal">{{ trans('text.home.explore') }}</a>
+                <a href="{{ route('countday.home') }}" {{-- data-bs-toggle="modal" data-bs-target="#exampleModal" --}}>{{ trans('text.home.explore') }}</a>
 
                 <!-- Modal -->
                 {{-- <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

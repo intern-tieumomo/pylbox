@@ -16,10 +16,10 @@ use Illuminate\Support\Facades\Route;
 Route::group(['middleware' => 'locale'], function() {
     Route::get('change-language/{language}', 'HomeController@changeLanguage')->name('home.change-language');
 
-    Route::group(['domain' => 'countday.pylation.herokuapp.com'], function () {
+    Route::group(['domain' => 'countday.localhost'], function () {
         Route::get('/', function () {
             return "Redirecting to Countday... ";
-        });
+        })->name('countday.home');
     });
 
     Route::get('/', function () {
